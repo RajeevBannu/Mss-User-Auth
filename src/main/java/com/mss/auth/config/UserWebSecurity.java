@@ -12,7 +12,7 @@ public class UserWebSecurity extends WebSecurityConfigurerAdapter {
         httpSecurity
                 .cors().and()
                 .csrf().disable().authorizeRequests()
-                .antMatchers("/users").hasRole("user")
+                .antMatchers("/").hasRole("user")
                 .anyRequest().authenticated()
                 .and()
                 .formLogin();

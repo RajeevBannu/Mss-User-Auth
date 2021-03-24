@@ -4,6 +4,7 @@ spring:
   application:
     name: MSS-User-Auth
   jpa:
+    show-sql: true
     hibernate:
       ddl-auto: update
   datasource:
